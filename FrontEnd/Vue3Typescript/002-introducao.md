@@ -82,6 +82,10 @@ do componente, é necessário que o método possua exatamente este nome, falarem
 Se você está acostumado com o `setInterval` já deve saber que ele executa um callback de tempos em tempos,
 neste caso, incrementa o valor de `counter` a cada 1000 milisegundos (1 segundo).
 
+Execute a aplicação e veja como está ficando interessante.
+
+## Alterando atributos reativamente
+
 Além de "interpolação de texto", podemos alterar atributos das tags HTML da seguinte maneira:
 ```html
 <template>
@@ -204,7 +208,7 @@ também altere o valor da variável `message` conforme o usuário digitar.
 
 ## Exibindo Condicionalmente
 
-E para encerrar essa aula iremos falar sobre o `v-if`, que permite ocultarmos algum elemento se uma condição é
+E para encerrar essa aula iremos falar sobre o `v-if`, que permite exibirmos algum elemento APENAS se uma condição é
 verdadeira:
 
 ```html
@@ -251,7 +255,9 @@ será exibido quando essa variável for verdadeira `<span v-if="clickedOnMessage
 E para torna-la verdadeira colocamos um evento de clique em um elemento que já tinhamos antes
 `<span @click="clickedOnMessage = true">{{ message }}</span>`.
 
+E testando, ao clicar na mensagem exibiremos o Easter Egg.
+
 ## E é isso
 
-Você já aprendeu diversos mecanismos do Vue e agora pode dar uma experimentada neles. Na próxima aula iremos criar uma
+Você já aprendeu diversos mecanismos do Vue e agora pode dar uma bela experimentada. Na próxima aula iremos criar uma
 aplicação de verdade, uma lista de tarefas onde você pode adicionar, remover e marcar itens como concluídos. 
