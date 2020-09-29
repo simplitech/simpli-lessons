@@ -43,7 +43,7 @@ O Vue-cli irá perguntar como deseja configurar o projeto, escolha estas opçõe
 - Use class-style component syntax? `Yes`
 - Use Babel alongside TypeScript (required for modern mode, auto-detected polyfills, transpiling JSX)? `Yes`
 - Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default): `Sass/SCSS (with dart-sass)`
-- Pick a linter / formatter config: `Standard`
+- Pick a linter / formatter config: `ESLint + Standard config`
 - Pick additional lint features: `Lint on save`
 - Where do you prefer placing config for Babel, ESLint, etc.? `In dedicated config files`
 - A última pergunta deve ser se quer salvar essa configuração, fique à vontade para escolher o que quiser
@@ -89,7 +89,7 @@ const TailwindLinelay = require('tailwindcss-linelay')
 module.exports = {
   important: true,
 
-  purge: false, // already used in postcss.config.js
+  purge: false,
 
   plugins: [
     // horiz, verti, weight
