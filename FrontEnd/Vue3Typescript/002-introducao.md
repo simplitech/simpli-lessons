@@ -1,4 +1,4 @@
-# Apagando o conteúdo que foi gerado 
+# Introdução 
 Para começarmos a experimentar o Vue, vamos ajustar algumas coisas que foram geradas na última aula que servem apenas
 para exemplo
 
@@ -54,7 +54,7 @@ export default class App extends Vue {
 No código acima estamos:
 - importando alguns tipos usados por nosso componente
 - declarando nosso Options, iremos conversar sobre ele mais pra frente
-- declarando e exportando a classe do nosso componente, chamada App, que herda de Vue
+- declarando e exportando (tornando pública) a classe do nosso componente, chamada App, que herda de Vue
 - declarando uma variável da instância dessa classe, chamada counter e inicializada com 0
 
 Nosso App já está funcionando, apesar de não parecer muito interessante já podemos notar
