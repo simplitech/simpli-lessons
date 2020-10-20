@@ -71,13 +71,11 @@ npm i tailwindcss-linelay -D
 
 ### Crie o arquivo `postcss.config.js` na raiz do projeto com o seguinte conteúdo:
 ```js
-const autoprefixer = require('autoprefixer');
 const tailwindcss = require('tailwindcss');
 
 module.exports = {
   plugins: [
     tailwindcss,
-    autoprefixer,
   ],
 };
 ```

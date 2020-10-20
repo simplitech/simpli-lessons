@@ -54,7 +54,7 @@ export default class App extends Vue {
 No código acima estamos:
 - importando alguns tipos usados por nosso componente
 - declarando nosso Options, iremos conversar sobre ele mais pra frente
-- declarando e exportando (tornando pública) a classe do nosso componente, chamada App, que herda de Vue
+- declarando e exportando (tornando pública) a classe de Typescript do nosso componente, chamada App, que herda de Vue
 - declarando uma variável da instância dessa classe, chamada counter e inicializada com 0
 
 Nosso App já está funcionando, apesar de não parecer muito interessante já podemos notar
@@ -172,7 +172,7 @@ o tailwind para corrigir isso de uma maneira muito prática, alterando apenas o 
   </div>
 </template>
 ```
-No `div` colocamos o código `class="verti items-center"`, são 2 classes:
+No `div` colocamos o código `class="verti items-center"`, são 2 classes de CSS:
 - o `verti` (tailwindcss-linelay) faz com que
 os elementos dentro do div sejam exibidos um abaixo do outro
 - o `items-center` faz com que os itens fiquem centralizados, neste caso, horizontalmente pois usamos com um `verti`
@@ -200,7 +200,7 @@ Agora vamos dizer que você quer ler o texto que um usuário digita, podemos imp
   </div>
 </template>
 ```
-Veja que criamos um `div` com classe `horiz` para que fiquem em alinhamento horizontal, e dentro dele colocamos um novo
+Veja que criamos um `div` com classe de CSS `horiz` para que fiquem em alinhamento horizontal, e dentro dele colocamos um novo
 `input` e o nosso velho `button`.
 
 No `input` colocamos o código `v-model="message"`, isso faz com que ele receba o valor da variável `message` e que

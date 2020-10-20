@@ -25,7 +25,7 @@ export default class App extends Vue {}
 ```
 
 ## Começando pelo Modelo da lista de tarefas
-Para termos uma lista de tarefas primeiro precisamos criar a classe que representa uma única tarefa, então crie um
+Para termos uma lista de tarefas primeiro precisamos criar a classe de Typescript que representa uma única tarefa, então crie um
 arquivo `Task.ts` na pasta `src/model` com o seguinte código:
 ```typescript
 export class Task {
@@ -38,7 +38,7 @@ export class Task {
 
 ```
 No código acima estamos:
-- declarando e exportando (tornando pública) a classe chamada `Task`
+- declarando e exportando (tornando pública) a classe de Typescript chamada `Task`
 - que possui uma propriedade chamada `text` que é uma `string` que não aceita o valores nulos
 - e para termos certeza que `text` sempre terá um valor não-nulo precisamos que este valor seja passado no construtor
 
@@ -79,7 +79,7 @@ Para exibir uma lista no vue basta usar um `v-for` e o atributo `key`, então mo
   </ul>
 </template>
 ```
-Usamos as classes `list-disc` e `pl-6` para darmos o estilo de lista e um padding do lado esquerdo.
+Usamos as classes de CSS `list-disc` e `pl-6` para darmos o estilo de lista e um padding do lado esquerdo.
 
 Colocamos o código `v-for="(todo, i) in tasks"`, a sintaxe é bem simples: do lado esquerdo, entre parênteses você cria
 uma variável com o valor de cada item da lista, e em seguida uma variável para o índice de cada item da lista, após
@@ -226,7 +226,7 @@ então voltando para o `App.vue` podemos escrever o seguinte no `<template>`:
 Estamos passando a variável `todo` para a `prop` chamada `task` dessa forma: `:task="todo"`
 
 E aproveitamos novamente para dar uma estilizada na tela, usando o velho `verti`, alterando o padding, o fundo e em especial
-usando a classe `min-h-screen` que faz com que a altura mínima desse elemento seja a altura da tela.
+usando a classe de CSS `min-h-screen` que faz com que a altura mínima desse elemento seja a altura da tela.
 
 Também colocamos um `mb-2` aqui na `task-item` para dar um espaçamento entre eles. Gosto de definir margem, largura e
 altura do lado de fora do componente para poder reutiliza-lo melhor.
